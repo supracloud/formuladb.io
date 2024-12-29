@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> _head.html}}
+
+<body class="frmdb-editor-normal">
+    {{> _header.html}}
+    <div class="d-flex flex-column justify-content-center frmdb-section-dark frmdb-bg-2 frmdb-bg-1-primary-gradient frmdb-bg-2-circles"
+        style="background-repeat: no-repeat, no-repeat; background-size: cover, cover">
+        <div class="container">
+            {{> _nav.html}}
+        </div>
+        <div class="py-2 text-center">
+            <h1 class="display-4 text-white" contenteditable="true" spellchecker="false">Blog</h1>
+        </div>
+    </div>
+    
+    <section class="frmdb-section-light container py-5">
+        <frmdb-t-section-divider></frmdb-t-section-divider>
+        <div class="text-center mb-5"></div>
+        <frmdb-t-card-deck class="frmdb-cards-2">
+            <frmdb-t-card-media-main class="" data-frmdb-table="$FRMDB.$Page[]" data-frmdb-table-limit="10">
+                <frmdb-t-img class="overflow-hidden frmdb-bg-2 frmdb-bg-2-dark-solid-tint-50 frmdb-bg-contain grid-1-1-1-1" style="--frmdb-bg-img:url(&quot;/web/20200804032153im_/https://formuladb.io/formuladb-env/frmdb-apps/formuladb-io/static/blog-become-no-code-consultant.png&quot;);" data-frmdb-value="$FRMDB.$Page[].screenshot"></frmdb-t-img>
+                <div class="card-body text-center">
+                    <h5 class="invisible">Card 1 title</h5>
+                    <h6 data-frmdb-value="$FRMDB.$Page[].author">Alex Cristu</h6>
+                    <small data-frmdb-value="$FRMDB.$Page[].frmdb_display_date">2020-04-27</small>
+                    <p data-frmdb-value="$FRMDB.$Page[].description">Become a FormulaDB no-code consultant. Use formuladb to create  websites and business apps for your customers</p>
+                </div>
+                <frmdb-t-card-action class="grid-1-1-1-1 grid-align-self-end grid-justify-self-center mb-4">
+                    <a href="blog-become-no-code-consultant.html" class="btn btn-sm btn-outline-light" data-frmdb-attr="href:CONCATENATE(name, &quot;.html&quot;):$FRMDB.$Page[]">Read</a>
+                </frmdb-t-card-action>
+                <frmdb-t-card-note class="text-center"></frmdb-t-card-note>
+            </frmdb-t-card-media-main>
+            <frmdb-t-card-media-main class="" data-frmdb-table="$FRMDB.$Page[]" data-frmdb-table-limit="10">
+                <frmdb-t-img class="overflow-hidden frmdb-bg-2 frmdb-bg-2-dark-solid-tint-50 frmdb-bg-contain grid-1-1-1-1" style="--frmdb-bg-img:url(&quot;/web/20200804032153im_/https://formuladb.io/formuladb-env/frmdb-apps/formuladb-io/static/blog-free-digital-transformation-consulting-for-sme-against-covid19.png&quot;);" data-frmdb-value="$FRMDB.$Page[].screenshot"></frmdb-t-img>
+                <div class="card-body text-center">
+                    <h5 class="invisible">Card 1 title</h5>
+                    <h6 data-frmdb-value="$FRMDB.$Page[].author">Alex Cristu</h6>
+                    <small data-frmdb-value="$FRMDB.$Page[].frmdb_display_date">2020-05-24</small>
+                    <p data-frmdb-value="$FRMDB.$Page[].description">Digital Transformation Consulting for SMEs against Covid19 pandemic. Use formuladb to start offering online services and also to manage and monitor your processes</p>
+                </div>
+                <frmdb-t-card-action class="grid-1-1-1-1 grid-align-self-end grid-justify-self-center mb-4">
+                    <a href="blog-free-digital-transformation-consulting-for-sme-against-covid19.html" class="btn btn-sm btn-outline-light" data-frmdb-attr="href:CONCATENATE(name, &quot;.html&quot;):$FRMDB.$Page[]">Action</a>
+                </frmdb-t-card-action>
+                <frmdb-t-card-note class="text-center"></frmdb-t-card-note>
+            </frmdb-t-card-media-main>
+        </frmdb-t-card-deck>
+        <frmdb-t-section-divider></frmdb-t-section-divider>
+    </section>
+    <div class="d-flex">
+        <input type="text" value="blog-" class="frmdb-hidden" data-frmdb-filter="$FRMDB.$Page[].filter.name.startsWith">
+        <input type="text" value="hidden2" class="frmdb-hidden">
+    </div>
+    {{> _footer.html}}
+</body>
+</html>
